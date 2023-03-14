@@ -20,6 +20,7 @@ GSS <-read.dta(file="GSS2016.dta")
 GSS <- droplevels(GSS)
 mydata <- select(GSS,sex,race,cappun,degree,relig,gunlaw,tvhours,owngun,age,wordsum)
 mydata <- na.omit(mydata)
+source(file="fisherXY.R")
 ```
 
 # Introduction
@@ -43,7 +44,13 @@ If not, then whose view differs from whom??
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question. Bottom line is to explain the features of the graph that are relevant to conforming or departing to what is expected by your null hypothesis !-->
 
+```{r}
+barchartGC(~race + cappun,data=mydata)
+barchartGC(~race + cappun,data=mydata, type="percent")
 
+```
+
+For the data shown above, the population that favors capitol punishment the most is the whites, then the "other" and then the black. The data here is similar to the data from the master branch where the percentages of those in favor and opposing are highly similar. 
 
 ## Now with LESS data (more variables give less data due to NA's) create the approate graphic displays to answer the question.
 
