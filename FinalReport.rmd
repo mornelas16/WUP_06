@@ -82,7 +82,11 @@ chisqtestGC(table1)
 fisher.test(table1)
 ````
 
-With the data above, we can see that there were 1300 white people who were in favor of capitol punishment while the other 697 were against it. With the other there was 138 in favor with 112 opposed. With the black population, there was 191 who were in favor with 257 who were opposed. From the fisherXY test, we can see that statistically, each race differs from another making all t-test results significant.
+```{r}
+fisherXY (mydata$race,mydata$cappun, printAll=TRUE)
+```
+
+With the data above, we can see that there were 1300 white people who were in favor of capitol punishment while the other 697 were against it. With the other there was 138 in favor with 112 opposed. With the black population, there was 191 who were in favor with 257 who were opposed. From the fisherXY test, we can see that statistically, each race differs from another making all t-test results significant. From the fisherXY test, we can see that statistically, each race differs from another making all t-test results significant.
 
 ## More data version
 
