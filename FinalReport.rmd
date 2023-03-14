@@ -1,7 +1,7 @@
 ---
 title: "GSS challange Less Data"
-author: "Put your name here!"
-date: "put the date here"
+author: "Marina Ornelas"
+date: "3/14/23"
 output: html_document
 ---
 
