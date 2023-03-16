@@ -79,13 +79,13 @@ The table above shows that there is 68% of the white population in favor of capi
 chisq.test(table1)
 chisqtestGC(table1)
 fisher.test(table1)
-````
+```
 
 ```{r}
 fisherXY (mydata$race,mydata$cappun, printAll=TRUE)
 ```
 
-
+The fisher XY test tells us that white and black are different with a p-value of 0.00001.741. There is no difference between black and other since the p-value is 0.06 and with white and other the p-value is 0.25. 
 
 # Discussion and Conclusion
 
